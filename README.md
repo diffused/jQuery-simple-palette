@@ -3,8 +3,6 @@
 
 A quick and simple html color palette jquery plugin.
 
-[]
-
 Displays a customizable, limited palette of colors in a simple html grid.
 
 [Check out the demo](http://jsfiddle.net/diffused/AeaXf/embedded/result/)
