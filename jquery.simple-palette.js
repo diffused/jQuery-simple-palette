@@ -1,34 +1,24 @@
-/*
+/*!
+jQuery simple palette
+
 A quick and simple html color palette jquery plugin.
 
-usage:
+Copyright 2013, Shaun Fuchs
 
-Palette will replace the html in the given div.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-$('#whatever').palette(); // defaults to 'box' type
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-3 default palettes are included: 
-	'thin'
-	'strip'
-	'box'
-
-$('#whatever').palette('thin');
-
-$('#whatever').palette('strip');
-
-$('#whatever').palette('box');
-
-You can set your own colors and column width.
-	cols : int representing number of colors wide (default 1).
-	colors : string array of hex colors. Leading '#' is optional.
-
-$('#whatever').palette({cols:1, colors:['c8323a', '#405192', '0c9557']});
-
-default css classes:
-	.colorbox 
-	.colorbox_row
-	.colorbox_cell
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+
 
 (function($) {  	
   $.fn.palette = function(options) {
