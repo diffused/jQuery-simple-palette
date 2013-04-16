@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<title>jquery.simple-palette.js demo</title>
+
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="jquery.simple-palette.js"></script>
+		<link href="demo.css" rel="stylesheet" />
+
+	</head>
+<style>
+	#palettes_list { list-style: none; }
+	#palettes_list li { padding-bottom:20px; margin-bottom: 20px; border-bottom:1px solid #ccc; }
+	#thin_palette .box_color { width:20px; height:20px;}
+
+	#palette_thin .box_color { width:20px; height:20px;}
+
+</style>
+
+
+<ul id="palettes_list">	
+	<li>
+		<h4>Default</h4>
+		<p>$('#palette').palette();</p>
+		<div id="palette"></div>
+	</li>
+	<li>
+		<h4>'Thin' preset</h4>
+		<p>$('#palette_thin').palette('thin');</p>
+		<div id="palette_thin"></div>
+	</li>
+	<li>
+		<h4>'Strip' preset</h4>
+		<p>$('#palette_strip').palette('strip');</p>
+		<div id="palette_strip"></div>
+	</li>
+	<li>
+		<h4>Box' preset</h4>
+		<p>$('#palette_box').palette('box');</p>
+		<div id="palette_box"></div>
+	</li>
+	<li>
+		<h4>Custom</h4>
+		<p>$('#palette_custom').palette({cols:1, colors:['c8323a', '#405192', '0c9557']});</p>
+		<div id="palette_custom"></div>
+	</li>
+</div>
+
+<script>
+$(function(){
+	$('#palette').palette();
+
+	$('#palette_thin').palette('thin');
+	
+	$('#palette_strip').palette('strip');
+	
+	$('#palette_box').palette('box');
+
+	$('#palette_custom').palette({ cols: 1, colors: ['c8323a', '#405192', '0c9557'] });	
+
+});
+	
+</script>
