@@ -8,6 +8,7 @@
 		<link href="jquery.simple-palette.css" rel="stylesheet" />
 
 		<style>
+			body { font-family: 'Noto Sans', sans-serif; color:#333; }
 			#palettes_list { list-style: none; }
 			#palettes_list li { padding-bottom:20px; margin-bottom: 20px; border-bottom:1px solid #ccc; }
 			#thin_palette .box_color { width:20px; height:20px;}
@@ -18,7 +19,8 @@
 	<body>
 		<h1>jQuery simple palette</h1>
 
-		<p>A quick and simple html color palette jquery plugin.</p>
+		<p>A quick and simple html color palette generator jquery plugin.</p>
+		<p>Displays a customizable, limited palette of colors in a simple html grid.</p>		
 
 		<ul id="palettes_list">	
 			<li>
@@ -42,7 +44,7 @@
 				<div id="palette_box"></div>
 			</li>
 			<li>
-				<h4>Custom</h4>
+				<h4>Custom - single column width, 3 colors</h4>
 				<p>$('#palette_custom').palette({cols:1, colors:['c8323a', '#405192', '0c9557']});</p>
 				<div id="palette_custom"></div>
 			</li>

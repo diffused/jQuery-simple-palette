@@ -1,8 +1,10 @@
 jQuery simple palette
 
 A quick and simple html color palette jquery plugin.
+Displays a customizable, limited palette of colors in a simple html grid.
 
-usage:
+
+Usage:
 
 Palette will replace the html in the given div.
 
